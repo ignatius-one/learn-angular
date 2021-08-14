@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Das Hause</div>
+        <menu id="menu">
+            <i  id="dark-mode" class="icon-change"></i>
+            <a href="#Introduction">Introduction</a>
+            <a href="#install">Install</a>
+            <a href="#plugin">Plugins</a>
+        </menu>
+        <i class=" bars" id="show-menu"></i>
+    </nav>
+
+
+    <main>
+        <h1 >Welcome to Angular <span>A</span></h1>
+        <h2 id="Introduction">Introduction</h2>
+        <p class="paragrap">Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.</p>
+        <p class="paragrap">The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components that are organized into NgModules. NgModules collect related code into functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root module that enables bootstrapping, and typically has many more feature modules.</p>
+        <h3>What's Angular?</h3>
+    <p class="paragrap">What Angular is, what advantages it provides, and what you might expect as you start to build your applications.</p>
+    <p class="paragrap">Angular is a development platform, built on TypeScript. As a platform, Angular includes:</p>
+    <ul>
+        <li>A component-based framework for building scalable web applications</li>
+        <li>A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more</li>
+        <li>A suite of developer tools to help you develop, build, test, and update your code</li>
+    </ul>
+    <p class="paragrap">With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with a minimum of effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors, and content creators.
+    </p>
+
+
+
+
+        <div class="container-text">
+            <div class="conatiner_text_hidden" id="show">
+                <p>Requirements  <b>Before to learn Angular</b> </p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="container_none" id="mostrar">
+                <h3>Web Technologies</h3>
+                <ul>
+                    <li>HTML <img class="logo" src="./src/Devicon-html5-plain.svg" alt=""></li> 
+                    <li>Java Scrip <img class="logo" src="./src/Javascript_Logo.png" alt=""></li>
+                    <li>Css <img class="logo" src="./src/CSS3_logo.svg.png" alt=""></li>
+                <h3>about other </h3>
+                    <li>NPM <img class="logo" src="./src/Npm-logo.svg" alt=""></li>
+                    <li>Sass <img class="logo" src="./src/sass-1.svg" alt=""></li></li>
+                    <li>Type scrip <img class="logo" src="./src/Typescript_logo_2020.svg.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+<!-- ------------------------------------------------ -->
+<h2 id="plugin">Plugins in Vcode recommend use to Angular</h2>
+<div class="container_card">
+    <div class="card">
+    <div class="content">
+        <h3>Angular 2 TypeScript Emmet</h3>
+        <p>Angular 2 TypeScript Emmet suport for VS Code
+        Have you ever missed zen coding support for Angular 2 typescript files inside vscode? If is your answer yes then following extension to Visual Studio Code solve you issue.</p>
+    <img src="./src/use-extension.gif" alt="">
+    <a href="https://marketplace.visualstudio.com/items?itemName=jakethashi.vscode-angular2-emmet" target="_blank" >Install</a>
+    </div>    
+    </div>
+
+    <div class="card">
+    <div class="content">
+        <h3>Angular Language Service</h3>
+        <p>
+this extension is recommended because it is easier to write code in angular</p>
+    <img src="./src/angular-service.gif" alt="">
+    <a href="https://marketplace.visualstudio.com/items?itemName=Angular.ng-template" target="_blank" >Install</a>
+    </div>    
+    </div>
+
+    <div class="card">
+    <div class="content">
+        <h3>Angular Files</h3>
+        <h4>VS Code Angular Files</h4>
+    <p>This extension allows quickly scaffold angular 2 file templates in VS Code project.</p>    
+    <img src="./src/componentsAngular.gif" alt="">
+    <a href="https://marketplace.visualstudio.com/items?itemName=alexiv.vscode-angular2-files" target="_blank" >Install</a>
+    </div>    
+    </div>
+
+    <div class="card">
+    <div class="content">
+        <h3>Angular Snippets</h3>
+    <p>This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.</p>    
+    <img src="./src/ANGULAR-SHITMENTS.gif" alt="">
+    <a href="https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2" target="_blank" >Install</a>
+    </div>    
+    </div>
+
+    <div class="card">
+    <div class="content">
+        <h3>Angular Support</h3>
+    <p>This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.</p>    
+    <img src="./src/ANGULAR-support.gif" alt="">
+    <a href="https://marketplace.visualstudio.com/items?itemName=vismalietuva.vscode-angular-support" target="_blank" >Install</a>
+    </div>    
+    </div>
+    
+</div>
+
+        <!-- ------------------------------------------------  -->
+     <h2 id="install">How to install</h2>
+     <p class="paragrap">Firts you need install Node js in your computer and NPM after install node executed this code:</p>   
+      <pre>
+          <code>
+    npm install -g @angular/cli
+          </code>
+      </pre>
+      <h3>Create a workspace and initial application</h3>
+      <p class="paragrap"></p>
+      <pre>
+          <code>
+    ng new nameYourFolder
+          </code>
+      </pre>
+
+      <h3>How to create an Angular component the first is the full command and the second is the recommended shortcut use this</h3>
+      <p class="paragrap"></p>
+      <pre>
+          <code>
+    ng generate component namecomponent 
+    ng g c namecomponent 
+          </code>
+      </pre>
+
+      <h2>Install bootstrap </h2>
+      
+      <p class="paragrap"></p>
+      <pre>
+          <code>
+    npm install bootstrap jquery @popperjs/core
+          </code>
+      </pre>
+
+      <h3>So now to install bootstrap in Angular.json file, put it at this address remplace be careful</h3>
+      <p class="paragrap"></p>
+      <pre>
+  "styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.scss"
+  ],
+  "scripts": [
+  "node_modules/jquery/dist/jquery.min.js",
+  "node_modules/@popperjs/core/dist/umd/popper.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ]
+      </pre>
+
+
+    </main>
+
+
+    
+
+    <script src="./scrip/scrip.js"></script>
+</body>
+</html>

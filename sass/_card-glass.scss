@@ -1,0 +1,72 @@
+
+$angular:#dd1b16;
+$bgjs:#f0db4f;
+$tjs:#323330;
+$bcts:#007acc;
+$white:#ffffff;
+$bgcss:#2965f1;
+$bghtml:#e34c26;
+
+
+.conatiner-card{
+    width: 100%;
+    height: 100vh;
+    background: url(../src/part.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+    .card{
+        border-radius: .75em;
+       
+        padding: 1.25em;
+        width: 250px;
+        height: 400px;
+        // background-color: rgba(255,255,255,.1);
+        background: rgb(22, 160, 133,.1);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, rgb(244, 208, 63,.1), rgb(22, 160, 133,.1));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgb(244, 208, 63,.1), rgb(22, 160, 133,.1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,.5);
+        color: $white;
+        .content{
+             display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .75em;
+             a{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border-radius: .75em;
+            width: 100px;
+            height: 50px;
+            text-decoration: none;
+            color: $white;
+            font-size: 1.125em;
+            font-weight: bold;
+            padding: .3125em;
+            background-color: $tjs;
+        }
+ 
+        }
+              }
+}
+// <div class="conatiner-card">
+//         <div class="card">
+//             <div class="content">
+//                 <h3>Lorem</h3>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium aspernatur omnis odio officia sequi voluptatem optio, sapiente consequatur, voluptatum eligendi totam? Laboriosam, nesciunt! Sint temporibus ducimus deserunt quos quam!</p>
+//                 <a href="#">Read More</a>
+//             </div>
+//         </div>
+
+    
+//     </div>

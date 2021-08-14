@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$angular:#dd1b16;
+$bgjs:#f0db4f;
+$tjs:#323330;
+$bcts:#007acc;
+$white:#ffffff;
+$bgcss:#2965f1;
+$bghtml:#e34c26;
+
+
+
+$main:#f8f9fa;
+$code:#e9ecef;
+$title:#212529;
+$leatter:#343a40;
+$leatter-import:#6c757d;
+$blue-dark:#003049;
+$esquare:#98c1d9;
+$purple:#7400b8;
+
+nav{
+    background-color: $angular;
+    height: 5em;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    color: $main;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    z-index: 1000;
+    
+    body.dark-active &{
+        background-color: $bcts;
+    }
+    .bars{
+        position: relative;
+        // width: .625em;
+        // height: .625em;
+        cursor: pointer;
+        padding: 1.25em;
+        // center elemenet 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .4s ease;
+        display: none;
+        &::before{
+            content: '';
+            position:absolute;
+            width: .9375em;
+            height: .125em;
+            background-color: $white;
+            transition: .4s ease;
+            // move up with translate
+                     transform: translateY(-0.375em);
+            // other line 
+                        box-shadow: 0 .4375em 0 $white; 
+        }
+        &::after{
+            content: '';
+            position:absolute;
+            width: .9375em;
+            height: .125em;
+            background-color: $white;
+            transition: .4s ease;
+            // move up with translate
+                     transform: translateY(8px);
+        }
+    }
+    .logo{
+        padding: .75em;
+        border: .125em solid $white;
+    }
+    @media (max-width:750px) {
+         .bars{
+        display: flex;
+        }
+    }
+    menu{
+
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        
+        .icon-change{
+            position: relative;
+            width: 50px;
+            height: 30px;
+            border-radius: .9375em;
+            &::after{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom:0;
+                content: '';
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: $white;
+                transition: .4s ease;
+            }
+        }
+        .change{
+            &::after{
+                transform: translateX(100%);
+                background-color: $bgjs;
+            }
+        }
+
+        @media (max-width:817px) {
+            top: 5em;
+            position: fixed;
+            width: 100%;   
+            right: -100%;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            gap: .9375em;
+            background-color: $angular;
+            border-top: 2px solid $tjs;
+            transition: .6s ease all;
+            z-index: -10;
+            padding-bottom: 1.875em;
+            padding-top: 1.875em;
+            body.dark-active &{
+           background-color: $bcts;
+            }
+            i{
+                width: 3.125em;
+                
+            }
+        }
+        
+    }
+    .active{
+    right: 0;    
+        }
+
+        // animation bars x 
+    .bar-x{
+        background-color: $angular;
+        color: $tjs;
+        &::before{
+            transform: translateY(0)  rotate(45deg);
+            box-shadow: 0 0 0 $white;
+        }
+        &::after{
+            transform: translateY(0) rotate(-45deg);
+        }
+        // if background is dark 
+         body.dark-active &{
+           background-color: $bcts;
+         }
+
+    }
+
+        i{
+            background-color: $tjs;
+            font-size: 1.125em;
+            padding: .5em;
+            border-radius: 50%;
+            cursor: pointer;
+            &:active{
+                transform: scale(1.2);
+            }
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: $main;
+            font-size: 1.25em;
+            text-transform: uppercase;
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+       
+}
